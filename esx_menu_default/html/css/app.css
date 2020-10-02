@@ -1,0 +1,190 @@
+/* Fuentes extra */
+@font-face {
+  font-family: SignPainter;
+  src: url('../fonts/d.otf');
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../fonts/excalib.ttf');
+}
+
+@font-face {
+  font-family: glitch;
+  src: url('../fonts/pdown.ttf');
+}
+/* Fuentes extra */
+
+/* Configuracion CSS */
+
+span {
+
+  font-family: Verdana;
+  text-transform: uppercase;
+  font-size: 10px;
+	font-weight: bold;
+  padding: 0 10px;
+  position: left;
+  top: 0px;
+
+}
+
+
+.menu {
+
+  font-family: Verdana;
+  font-size  : 3px;
+  min-width  : 290px;
+  width      : 100px;
+  color      : #fff;
+  box-shadow : 0px 0px 0px 0px #000;
+  position   : absolute;
+  left       : 40;
+  top        : 40; 
+
+}
+
+.menu.align-left 
+{
+	right: 60;
+	bottom: 40;
+}
+
+.menu.align-top-left 
+{
+	right: 60;
+	bottom: 40;
+}
+
+.menu.align-top 
+{
+	right: 60;
+	bottom: 40;
+}
+
+.menu.align-top-right {
+	right: 60;
+	bottom: 40;
+}
+
+.menu.align-right 
+{
+	right: 60;
+	bottom: 40;
+}
+
+.menu.align-bottom-right 
+{
+	right: 60;
+	bottom: 40;
+}
+
+.menu.align-bottom 
+{
+	right: 60;
+	bottom: 40;
+}
+
+.menu.align-bottom-left 
+{
+	right: 60;
+	bottom: 40;
+  
+}
+
+.menu.align-center 
+{
+	right: 60;
+	bottom: 40;
+}
+
+
+.menu .head {
+
+  border-radius: 10px 10px 0px 0px;
+  height: 40px;
+  line-height: 39px;
+  color: white  ;
+  text-align: center;
+  animation: BgGradient 45s ease infinite;
+  background: linear-gradient(150deg,#f1000073,#fa7b05,#d1e70900,#00ffaa62,#cf043762,#f10538d5,#1a38be,#d9f10073,#8e44ad,#00000000,#4400ff62,#cf043762,#05f14ce7,#1a38be);
+	background-size: 900% 900%;
+
+}
+
+.space {
+
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.menu .menu-items {
+
+  max-height : 350px;
+  overflow-y : hidden;
+  background-color: rgba(22, 22, 22, 0.781);
+  border-radius: 0px 0px 20px 20px;
+
+}
+.menu .menu-items .menu-item {
+
+  display: block;
+  font-size: 12px;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  text-align: left;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.menu .menu-items .menu-item.selected {
+
+  background-color: rgba(0, 0, 0, 0.363);
+  animation: pulse 800ms infinite; 
+  color :rgb(255, 255, 255);
+
+}
+
+.menu {
+  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(0px) translateZ(0);
+  transform: perspective(0px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+
+}
+
+/* Fin configuracion CSS */
+
+/* Keyframes */
+
+
+@keyframes BgGradient {
+  0% {background-position: 0% 50% ;}
+  50% {background-position: 100% 50% ;}
+  100% {background-position: 0% 50% ;}
+}
+
+@keyframes pulse {
+  0% 
+  { 
+      transform: scale(1.0);    
+  }
+  20% 
+  { 
+      transform: scale(1.04); 
+  }
+  100% 
+  { 
+      transform: scale(1.0);  
+  }
+}
+
+*{
+  overflow: hidden;
+}
